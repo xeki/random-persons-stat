@@ -24,7 +24,14 @@ export  default function reducer(state=init, action){
       case LOAD_RANDOM_USERS_WAITING:
           return {...state, status:'waiting'};
       case LOAD_RANDOM_USERS_SUCCESS:
-           result = {...state, minAge: 0, maxAge: 0, averageAge:0, status: 'success',randomUsers: action.payload};
+           result = {...state,
+                     minAge: 0,
+                     maxAge: 0,
+                     averageAge:0,
+                     status: 'success',
+                     northernMostPerson: {},
+                     southernMostPerson: {},
+                     randomUsers: action.payload};
            return result;
        case LOAD_RANDOM_USERS_ERROR:
             result = { ...state, status: 'error'};

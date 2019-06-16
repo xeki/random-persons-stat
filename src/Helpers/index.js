@@ -2,9 +2,10 @@ const axios = require('axios');
 const _ = require('lodash');
 
 const URL='https://randomuser.me/api/?results=5000';
-module.exports.getRandomUsersData =  function getRandomUsersData(){
+module.exports.getRandomUsersData =  async function getRandomUsersData(){
   console.log("Returning Random users promise");
-  return axios.get(URL);
+  const response = await axios.get(URL);
+  return response.then( data => data).catch(error => error);
 }
 
 module.exports.getAverageAge = function getAverageAge(randomUsers){

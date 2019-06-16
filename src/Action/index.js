@@ -8,7 +8,7 @@ import {LOAD_RANDOM_USERS_SUCCESS,
         LOAD_RANDOM_USERS_WAITING
       } from '../Type';
 import axios from 'axios';
-const URL='https://randomuser.me/api/?results=5000';
+const URL='https://randomuser.me/api/?results=500';
 
 export const loadRandomUsers = ()=>{
   return (dispatch)=>{
