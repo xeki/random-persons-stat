@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Description
 
-Application to list random users from an API and displaying: minimun, maximun, average ages of randomusers along with location description.
+Application to list random users from an API and displaying: minimun, maximun, average ages of random users along with location description.
 Frontend: using React and Redux
 Backend: Node express
 
