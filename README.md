@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Description
+
+Application to list random users from an API and displaying: minimun, maximun, average ages of randomusers along with location description.
+Frontend: using React and Redux
+Backend: Node express
+
 ## Available Scripts
 
 In the project directory, you can run:
