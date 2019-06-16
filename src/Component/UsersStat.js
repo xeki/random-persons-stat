@@ -57,7 +57,8 @@ class UsersStat extends Component{
              <p> <strong> Random users loading status: </strong> {this.props.state.status} </p></div>
             {this.props.state.status === 'waiting' ?
                   <p> Loading .... </p> :
-              <div>
+             this.props.state.status === 'success' &&
+              (<div>
                   <div className="display-block">
                         <div className="button-group" >
                             <button onClick={this.findAverageAge}> Average users age </button>
@@ -90,7 +91,7 @@ class UsersStat extends Component{
                       <strong> Southern most user: </strong> <br />
                       {this.displayObject(this.props.state.southernMostPerson)}
                   </div>
-              </div>
+              </div>)
           }
           </div>
     )
